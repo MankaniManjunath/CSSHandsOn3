@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS HandsOn3</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+        .head{
+            border: 10px solid red ;
+            border-radius: 15px;
+            width: 350px;
+            height: 100%;
+            display: inline-block;
+            margin-left: 500px;
+            padding-left: 80px;
+            justify-content: center;
+            background-color: aliceblue;
+            color: blueviolet;
+            font-style: italic;
+            box-shadow: 7px 7px purple;
+            
+        }
+        .main{
+            border: 10px solid green ;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            
+        }
+        #formcard{
+            font-weight: bold;
+            text-shadow: 1px 2px blue;
+            color: purple;
+            margin: 5px;
+            padding-top: 35px;
+        }
+       
+        .card{
+            font-weight: bold;
+            text-shadow: 1px 2px blue;
+            color: purple;
+            margin: 10px;
+            padding-top: 35px;
+            
+            text-align: center;
+            border: 5px solid red;
+            border-radius: 15px;
+            box-shadow: 10px 10px purple;
+            width: 250px;
+            height: 200px;
+            background-color: azure;
+        }
+      .btn{
+        font-weight: bolder;
+        font-size: medium;
+        border-radius: 15px;
+        height: 30px;
+        width: 120px;
+        background-color: orangered;
+      }
+      .box{
+    
+        text-align: center;
+        width: 900px;
+        margin: 10px;
+        margin-left: 200px;
+        margin-right: 200px;
+        background-color: green;
+       
+      }
+      .mainbox
+      {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+      .cards{
+        height: 200px;
+        width: 400px;
+        border: 5px soild black;
+        background-color:  rgb(238, 203, 88);
+      }
+      .mainbox{
+        margin-top: 30px;
+      }
+      .heading{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: larger;
+        font-weight: bolder;
+      }
+      .content
+      {
+        margin-top: 50px;
+        font-size: large;
+        font-weight: bold;
+      }
+      .container{
+        margin-top: 20px;
+        width: 100vh;
+        background-color: rgb(238, 203, 88);
+      }
+      .sticky{  
+        position: fixed;
+        bottom: 10px;
+        left:400px;
+        width: 500px;
+        background-color: greenyellow;
+        padding: 15px;
+        text-align: center;
+        border-radius: 10px;
+        border: 5px solid red;
+        box-shadow: 5px 5px purple;
+      }
+      h2{
+        padding-top: 10px;
+      }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <h1>WELCOME TO <br> ALL IN ONE <br> GENERAL STORE </h1>
+    </div> <hr><hr>
+    <div class="main">
+            <div class="start">
+                <div class="StartCards">
+                    <h2 class="card">Address: B-145 Delhi Public School Faridabad Harayan.</h2>
+                    <h2 class="card">WE SERVE OUR BEST TO YOU. <br> PLEASE VISIT OUR STORE FOR BETTER DEAL AND PRICE.</h2>
+                </div>
+            </div>
+            <div class="end">
+                <div class="StartCards2">
+                    <h2 class="card"><img src="food.png" alt="img" width="230px" height="180px" style="justify-content: center;"></h2>
+                    <h2 class="card">Please rate us <br><br>
+                        <form action="">
+                            <input type="number" name="no" id="no" maxlength="1" placeholder="Enter NO" required> <br><br>
+                            <input type="button" class="btn" value="sumbit">
+                        </form>
+                    </h2>
+                </div>     
+            </div>
+    </div>
+    <div class="sticky">
+        Exciting offers only on monday <span>Get discount upto 10%</span>   
+    </div>
+    <div class="box">
+        <h2>Welcome To My Store</h2>
+            <div class="mainbox">
+                <div class="cards">
+                    <div class="heading">Fruits</div><hr style="color:blue;">
+                    <div class="content">
+                        <i>BANANA, MANGO, ORANGE,STAWBERRY <br>COCONUT, DRY PLUMS,APPLE,ORANGE <br>PAPYA,PINEPPLE,MULBERRY,WATERMELON.</i>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="heading">Vegetables<hr style="color:blue;"></div>
+                    <div class="content">
+                        <i>CARROT, BROCCOLI, CAULIFLOWER, CORN <br>CUMCUMBER, EGGPLANT, GREEN PAPPER<br>ONION, POTATO, TOMATO.GREEN BEANS, PEASE RADISH</i>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="heading">Other items<hr style="color:blue;"></div>
+                    <div class="content">
+                        <i>CARROT, BROCCOLI, CAULIFLOWER, CORN <br>CUMCUMBER, EGGPLANT, GREEN PAPPER<br>ONION, POTATO, TOMATO.GREEN BEANS, PEASE RADISH</i>
+                    </div>
+                </div>
+            </div>
+    </div>
+    
+</body>
+</html>
